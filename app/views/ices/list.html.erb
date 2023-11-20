@@ -1,0 +1,66 @@
+<section id="image5">
+
+  <div class="itiran">
+    <div class="box2" style="text-align:center"> ~みんなのおすすめ~
+    </div>
+    <div class="box1" style="text-align:center">icecream</div>
+    
+  </div>
+  </section>
+
+<div class="itiran2">
+
+  <% @ices.each do |t| %>
+    <div class="ice">
+    <div class="shouhin0">
+    商品名
+    </div>
+     <div class="shouhin1">
+     <%= t.name %>
+     </div>
+     <br>
+     <div class="aji0">
+      味
+    </div>
+     <div class="aji1">
+     <%= t.flavor %>
+     </div>
+      <div>
+      <div class="hyouka1">
+      総合評価
+      <span class="star-rating">
+         <span class="star-rating-front" style="width: <%= getPercent(t.overall) %>%;">★★★★★</span>
+         <span class="star-rating-back">★★★★★</span>
+      </span> 
+      </div>
+      </div>
+      <div class="gazou1">
+      <%= image_tag t.image_url, size: "250x200" if t.image? %>
+      </div>
+      <% if user_signed_in? %>
+      <% if current_user.already_liked?(t) %>
+          <%= button_to ice_like_path(id: t.id, ice_id: t.id), method: :delete do %>
+              <p>いいねを取り消す</p><%= t.likes.count %>
+          <% end %>
+      <% else %>
+          <%= button_to ice_likes_path(id: t.id, ice_id: t.id), method: :post do %>
+              <p>いいね</p><%= t.likes.count %>
+          <% end %>
+      <% end %>
+  <% else %>
+      <p>いいねの数 = </p><%= t.likes.count %>
+  <% end %>
+      <br>
+      <div class="kansou0">
+      感想
+      </div>
+      <div class="kansou1">
+      <%= t.review %>
+      </div>
+      
+    </div>
+  <% end %>
+</div>
+
+ 
+</div>

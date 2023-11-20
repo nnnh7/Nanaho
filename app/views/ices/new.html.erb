@@ -1,0 +1,90 @@
+
+<section id="image4">
+
+  <div class="toukou">
+    <div class="box2" style="text-align:center"> ~みんなのおすすめ~
+    </div>
+    <div class="box1" style="text-align:center">icecream</div>
+    
+  </div>
+
+</section>
+
+<div class="sinnki-container">
+<br><br><br>
+<h3>新規投稿</h3>
+
+
+
+<div class="sinnki">
+
+  <%= form_for @ice do |f| %>
+
+
+  <div class="shouhin">
+    <%= f.label :商品名 %>
+    <%= f.text_field :name, :size => 30 %>
+  </div>
+
+  
+
+  <div class="aji">
+    <%= f.label :味  %>
+    <%= f.select :flavor, 
+    [["バニラ", "バニラ"], 
+    ["チョコ", "チョコ"], 
+    ["イチゴ", "イチゴ"], 
+    ["抹茶", "抹茶"], 
+    ["クッキー＆クリーム", "クッキー＆クリーム"], 
+    ["コーヒー", "コーヒー"],
+    ["ソーダ", "ソーダ"],
+    ["ピスタチオ", "ピスタチオ"], 
+    ["りんご", "りんご"], 
+    ["オレンジ", "オレンジ"],
+    ["桃", "桃"],
+    ["パイナップル", "パイナップル"],
+    ["その他", "その他"], ], include_blank: "選択して下さい" %>
+  </div>
+
+  <div class="hyouka">
+  <%= f.label :評価 %>
+  </div>
+     <div class="post_form">
+        <%= f.radio_button :overall, 5 ,id: 'star1'%>
+        <label for="star1"><span class="text">最高</span>★</label>
+    
+        <%= f.radio_button :overall, 4 ,id: 'star2'%>
+        <label for="star2"><span class="text">良い</span>★</label>
+    
+        <%= f.radio_button :overall, 3 ,id: 'star3'%>
+        <label for="star3"><span class="text">普通</span>★</label>
+    
+        <%= f.radio_button :overall, 2 ,id: 'star4'%>
+        <label for="star4"><span class="text">悪い</span>★</label>
+    
+        <%= f.radio_button :overall, 1 ,id: 'star5'%>
+        <label for="star5"><span class="text">最悪</span>★</label>
+     </div>
+  
+
+  <div class="gazou">
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  </div>
+
+  <div class="kansou">
+  <%= f.label :感想  %>
+  <%= f.text_area :review, :size => "30x15" %>
+</div>
+
+ </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="toukou">
+  <%= f.submit "投稿する", class: "buttonA" %>
+<% end %>
+</div>
+</div>
+<br><br><br>
+<section id="image3_1">
+</section>

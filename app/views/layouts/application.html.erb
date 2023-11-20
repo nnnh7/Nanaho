@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title >Icecream</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <script src="https://kit.fontawesome.com/cdea53f39b"  crossorigin="anonymous"></script> 
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  
+
+  <body>
+    <header>
+     <div class="header1">
+      <div class="header-list">
+      <ul>
+        <li><%= link_to "HOME", ices_path %></li>
+        <li><%= link_to "POST",new_ice_path %></li>
+        <li><%= link_to "LIST",ices_list_path %></li>
+
+      </ul>
+      </div>
+     </div>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+</html>
