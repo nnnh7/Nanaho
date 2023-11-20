@@ -7,8 +7,8 @@ Rails.application.routes.draw do
    
   end
 
-  
+  resources :recommends
   root 'ices#index'
 
-  resources :recommends 
+   
 end
