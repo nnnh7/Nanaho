@@ -2,7 +2,7 @@
 <section id="image6">
 
   <div class="sindan">
-    <div class="box1" style="text-align:center">Icecream</div>
+    <div class="box1" style="text-align:center">icecream</div>
     <div class="box4" style="text-align:center">診断</div>
     
   </div>
@@ -12,69 +12,91 @@
 <%= form_for(@recommend, class: 'form-horizontal', role: 'form') do |f| %>
     <div class="container-sindan">
         <div class="row" style="text-align:center">
+
+        <div class="saiteki">
         あなたに最適なアイスを見つけます！！
+        </div>
         
-            <div class="col-12">
-                <p>Q1. アイスをよく食べますか</p>
+        <div class="col-kisuu">
+            <div class="col-12-1">
+            <p><span>&nbsp;&nbsp;Q1.</span> &nbsp;&nbsp;&nbsp;アイスをよく食べますか&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             </div>
             <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい</p>
+            <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい&nbsp;&nbsp;&nbsp;</p>
+               
             </div>
+            
             <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ</p>
-            </div>
-
-            <div class="col-12">
-                <p>Q2. 限定品に惹かれやすいですか</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ</p>
-            </div>
-
-            <div class="col-12">
-                <p>Q3. よく行くのは</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>コンビニ</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>スーパー</p>
-            </div>
-
-            <div class="col-12">
-                <p>Q4. チョコ派？フルーツ派？</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>チョコ</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>フルーツ</p>
-            </div>
-
-            <div class="col-12">
-                <p>Q5. 好きなのは</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>ベリー系</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>柑橘系</p>
-
-             <div class="col-12">
-                <p>Q6. コーヒー・キャラメルが好きか</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ</p>
+            <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ</p>
             </div>
         </div>
+        <div class="col-guusuu">
+            <div class="col-12-2">
+                <p><span>&nbsp;&nbsp;Q2.</span> &nbsp;&nbsp;&nbsp;限定品に惹かれやすいですか&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ</p>
+            </div>
+        </div>
+
+        <div class="col-kisuu">
+            <div class="col-12-3">
+                <p><span>&nbsp;&nbsp;Q3.</span> &nbsp;&nbsp;&nbsp;よく行くのは&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "1", nil %>コンビニ&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "2", nil %>スーパー</p>
+            </div>
+         </div>
+
+         <div class="col-guusuu">
+            <div class="col-12-4">
+                <p><span>&nbsp;&nbsp;Q4.</span> &nbsp;&nbsp;&nbsp;チョコ派？フルーツ派？&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "1", nil %>チョコ&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "2", nil %>フルーツ</p>
+            </div>
+        </div>
+
+        <div class="col-kisuu">
+            <div class="col-12-5">
+                <p><span>&nbsp;&nbsp;Q5.</span> &nbsp;&nbsp;&nbsp;好きなのは&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "1", nil %>ベリー系&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "2", nil %>柑橘系</p>
+            </div>
+        </div>
+        
+        <div class="col-guusuu">
+             <div class="col-12-6">
+                <p><span>&nbsp;&nbsp;Q6.</span> &nbsp;&nbsp;&nbsp;コーヒー・キャラメルが好きか&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="col-6">
+            <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ</p>
+            </div>
+        </div>    
+        </div>
     </div>
-    <div class="sindanbotan" style="text-align:center">
-        <%= f.submit "診断結果へ" %>
+    <br><br>
+    
+    <div class="kekka">
+        <%= f.submit "診断結果へ", class: "buttonA_k" %>
     </div>
 <% end %>
+
+
+<br><br>

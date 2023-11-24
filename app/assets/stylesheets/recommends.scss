@@ -2,3 +2,105 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.saiteki{
+    padding-bottom: 30px;
+    padding-top: 50pX;
+}
+
+.col-12-1{
+    padding-right: 100pX;
+}
+.col-12-2{
+    padding-right: 100pX;
+}
+.col-12-3{
+    padding-right: 100pX;
+}
+.col-12-4{
+    padding-right: 100pX;
+}
+.col-12-5{
+    padding-right: 100pX;
+}
+.col-12-6{
+    padding-right: 100pX;
+}
+.col-6{
+    text-align: right;
+}
+span{
+    color:white; 
+     -webkit-text-stroke: 1px black;
+     font-family:Lily script one;
+     font-size: 30px;
+
+}
+.col-kisuu{
+    display: flex;
+    align-items: center;
+    background-color: #FFFCE0;
+    width: 50%;
+  margin-left: 25%;
+  
+  height: 80px;
+
+}
+
+.col-guusuu{
+    display: flex;
+    align-items: center;
+    background-color:#FFF9C2;
+    width: 50%;
+    margin-left: 25%;
+    
+    height: 80px;
+}
+
+.box4{
+    font-weight: bold;
+}
+
+.kekka{
+    text-align: center;
+  }
+  
+  
+  
+  .buttonA_k {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+  
+    color: #a7a49b;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(#fefcd6 0%, #FFFCE0 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+    border: none;
+  }
+  
+  .buttonA_k:active {
+    /*押したとき*/
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);/*沈むように*/
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);/*グラデーションを明るく*/
+  }
+  .buttonA_k:hover {
+    color:#ffd07f;
+  }
+
+  #mohaya{
+    
+    background-image: url(mohaya.jpg);
+    height: 300px;
+    
+  
+  }

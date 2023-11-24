@@ -20,6 +20,7 @@ class RecommendsController < ApplicationController
           redirect_to :action => "new"
       end
     end
+    
   
   private
     def recommend_params

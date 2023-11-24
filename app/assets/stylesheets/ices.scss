@@ -17,9 +17,23 @@
     color:white; 
      -webkit-text-stroke: 1px black;
      font-family:Lily script one;
-     
-      
+  padding-top: 200px;
     }
+
+ .box1_new{
+      font-size: 232px;
+        color:white; 
+         -webkit-text-stroke: 1px black;
+         font-family:Lily script one;
+      
+        }
+  .box1_list{
+      font-size: 232px;
+      color:white; 
+      -webkit-text-stroke: 1px black;
+      font-family:Lily script one;
+          
+  }
 .sindanstart{
   font-size: 300%;
   color:black; 
@@ -35,7 +49,9 @@
       
     
     }
-
+.logoutbotan{
+  text-align: right;
+}
     #image3_1{
     
       background-image: url(image3.jpg);
@@ -48,7 +64,7 @@
 
  #image4{
     
-      background-image: url(image4.jpg);
+      background-image: url(image6.jpg);
       background-size: cover;
       width: 100%;
       height: 846px;
@@ -60,7 +76,8 @@
 .box2{
   font-size: 96px;
     color:black;
-     
+    padding-top: 200px;
+     font-weight: bold;
       
     }
 
@@ -244,7 +261,7 @@ h3{
   border-top: none;
   border-left: none;
   border-right: none;
-  padding: 5px;
+  padding: 15px;
   border-radius: 10px;
   color: #eb6877;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, .44), 1px 1px 1px #4a0a11;
@@ -277,7 +294,7 @@ h3{
   left: 125px;
   top: 25px;
   font-size: 20px;
-  background-color: #c9c7c2;
+  background-color: #f2f1ef;
 }
 
 .aji1{
@@ -286,7 +303,7 @@ h3{
   position: relative;
   top: -10px;
   font-size: 20px;
-  background-color: #c9c7c2;
+  background-color: #f2f1ef;
   left: 125px;
 
 }
@@ -305,7 +322,7 @@ position: relative;
 left:360px;
 bottom: 75%;
 font-size: 20px;
-background-color: #c9c7c2;
+background-color:#f2f1ef;
 height: 200px;
 }
 
